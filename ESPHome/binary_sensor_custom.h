@@ -1,5 +1,4 @@
 #include "esphome.h"
-#include "esphome.h"
 
 class MyCustomBinarySensor : public PollingComponent, public BinarySensor {
     public:
@@ -13,17 +12,17 @@ class MyCustomBinarySensor : public PollingComponent, public BinarySensor {
     int keyIn = 0;
     //Array to store keypad numerical values
     int keyVals [16] = {
-    714, 700, 689, 678,
-    634, 616, 603, 588,
-    569, 544, 525, 505,
-    481, 445, 413, 382
+    714, 700, 689,
+    634, 616, 603,
+    569, 544, 525,
+    481, 445, 413
     };
     //Key characters corressponding to each numerical value
     char keys [16] = {
-    '1','2','3','A',
-    '4','5','6','B',
-    '7','8','9','C',
-    '*','0','#','D'
+    '1','2','3',
+    '4','5','6',
+    '7','8','9',
+    '*','0','#'
     };
     //Tolerance above or below the numerical value
     int range = 1;
